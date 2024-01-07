@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.e1c18a04.css",
-    "main.js": "/static/js/main.b8deca5d.js",
-    "static/js/787.53497780.chunk.js": "/static/js/787.53497780.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/index.html",
-    "main.e1c18a04.css.map": "/static/css/main.e1c18a04.css.map",
-    "main.b8deca5d.js.map": "/static/js/main.b8deca5d.js.map",
-    "787.53497780.chunk.js.map": "/static/js/787.53497780.chunk.js.map"
+    "main.css": "/Alpaca-generator/static/css/main.e1c18a04.css",
+    "main.js": "/Alpaca-generator/static/js/main.98f0bbc1.js",
+    "static/js/787.53497780.chunk.js": "/Alpaca-generator/static/js/787.53497780.chunk.js",
+    "static/media/logo.svg": "/Alpaca-generator/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Alpaca-generator/index.html",
+    "main.e1c18a04.css.map": "/Alpaca-generator/static/css/main.e1c18a04.css.map",
+    "main.98f0bbc1.js.map": "/Alpaca-generator/static/js/main.98f0bbc1.js.map",
+    "787.53497780.chunk.js.map": "/Alpaca-generator/static/js/787.53497780.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e1c18a04.css",
-    "static/js/main.b8deca5d.js"
+    "static/js/main.98f0bbc1.js"
   ]
 }
