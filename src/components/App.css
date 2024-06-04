@@ -1,48 +1,65 @@
+/* Styles for the main layout and background */
 
-.parent{
+.parent {
   height: 100vh;
-
   background-color: #74EBD5;
   background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
-  
 }
 
-.container{
-  display: flex;
+/* Styles for the container holding image and buttons */
 
-  flex-direction: row;
+.container {
+  display: flex; /* Keep row layout by default */
 }
 
-.heading{
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  .container {
+    flex-direction: column; /* Stack image and buttons on smaller screens */
+  }
+
+  .image-container,
+  .button_holder {
+    flex: 1; /* Take up full width in each column */
+  }
+}
+
+/* Styles for the heading (optional) */
+
+.heading {
   margin: 45px;
 }
 
-.image-container{
- 
+/* Styles for the image container */
 
+.image-container {
   margin: 40px;
   position: relative;
-  flex:0.7
+  flex: 0.7; /* Take up 70% of space on larger screens */
 }
 
 .image-container img {
   position: absolute;
- 
+  width: 100%;
+  height: 100%; /* Adjust image height as needed */
 }
 
-.button_holder{
-  flex: 0.3;
+/* Styles for the button container */
+
+.button_holder {
+  flex: 0.3; /* Take up 30% of space on larger screens */
   margin: 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
   grid-gap: 10px; /* Gap between grid items */
 }
 
- button {
+/* Styles for buttons */
+
+button {
   background-color: #3498db; /* Blue color for the background */
-  padding: 15px ;
+  padding: 15px;
   font-size: 18px;
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   text-align: center;
   border-radius: 10px; /* Rounded corners */
   color: #fff; /* White text color */
@@ -53,20 +70,20 @@
   outline: none; /* Remove outline on click */
 }
 
- button:hover {
+button:hover {
   background-color: #2980b9; /* Darker blue color on hover */
   color: #fff; /* White text color on hover */
   transform: scale(1.05); /* Slight scale effect on hover */
 }
 
+/* Styles for a specific "download" button (optional) */
 
-
-@media (max-width: 600px) {
-  .container {
-      grid-template-columns: 1fr; /* One column on small screens */
-  }
+.download button {
+  margin: 40px;
+  background-color: red;
 }
 
+/* Styles for the main heading (optional) */
 
 .main_heading {
   position: relative;
@@ -95,15 +112,12 @@
   transform: translateY(0);
 }
 
+/* Styles for horizontal line (optional) */
 
-/* You can add more styles for additional customization */
-hr{
+hr {
   border: 2px solid #000; /* Border color (black) */
   height: 4px; /* Thickness of the line */
   margin: 20px 0; /* Adjust margin as needed */
 }
 
-.download button{
-  margin: 40px;
-  background-color: red;
-}
+/* You can add more styles for additional customization */
