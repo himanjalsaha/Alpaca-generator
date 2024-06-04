@@ -43,6 +43,13 @@
   height: 100%; /* Adjust image height as needed */
 }
 
+/* Image Optimization (Consider using a tool like TinyPNG) */
+
+.image-container img {
+  /* Add this line to prioritize image loading */
+  object-fit: cover; /* Scales image to fill container while maintaining aspect ratio */
+}
+
 /* Styles for the button container */
 
 .button_holder {
@@ -116,8 +123,4 @@ button:hover {
 
 hr {
   border: 2px solid #000; /* Border color (black) */
-  height: 4px; /* Thickness of the line */
-  margin: 20px 0; /* Adjust margin as needed */
-}
-
-/* You can add more styles for additional customization */
+  height: 4px; /* Thickness of the line
